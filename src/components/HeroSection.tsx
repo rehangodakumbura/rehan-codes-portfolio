@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail, Phone, Github, Linkedin } from 'lucide-react';
-import profileImage from '@/assets/rehan-profile.jpg';
+import profileImage from '@/assets/rehan-profile-new.jpg';
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -17,7 +17,7 @@ const HeroSection = () => {
           {/* Profile Image */}
           <div className="order-2 lg:order-1 flex justify-center lg:justify-start">
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden border-4 border-primary/20 shadow-2xl">
+              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl">
                 <img
                   src={profileImage}
                   alt="Rehan Dewkalana Godakumbura"
