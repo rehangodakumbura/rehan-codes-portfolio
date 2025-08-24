@@ -14,7 +14,7 @@ const AboutSection = () => {
     {
       institution: "Informatics Institute of Technology (IIT)",
       degree: "Sri Lanka",
-      status: "Completed",
+      status: "In Progress",
       graduation: "",
       icon: School,
       current: false,
