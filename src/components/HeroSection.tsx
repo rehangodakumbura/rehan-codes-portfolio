@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail, Phone, Github, Linkedin } from 'lucide-react';
 import profileImage from '@/assets/rehan-profile-new.jpg';
+import coding from '../assets/coding.gif'
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -26,8 +27,7 @@ const HeroSection = () => {
               </div>
               <div className="absolute -bottom-6 -right-6 w-24 h-24 accent-gradient rounded-2xl flex items-center justify-center">
                 <div className="text-background font-bold text-sm text-center">
-                  <div>2026</div>
-                  <div className="text-xs">Graduate</div>
+                  <img src={coding} alt="coding-boy"/>
                 </div>
               </div>
             </div>
@@ -38,7 +38,7 @@ const HeroSection = () => {
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
               Hello, I'm{' '}
               <span className="text-primary">Rehan Dewkalana</span>{' '}
-              <span className="text-primary">Godakumbura</span>
+              {/* <span className="text-primary">Godakumbura</span> */}
             </h1>
             
             <p className="text-xl lg:text-2xl text-text-muted mb-8 font-medium">
@@ -46,7 +46,7 @@ const HeroSection = () => {
             </p>
             
             <p className="text-lg text-text-muted mb-10 leading-relaxed max-w-2xl">
-              I am Rehan Godakumbura, an undergraduate Software Engineering student at the University of Westminster with strong expertise in full-stack development, data analysis, mobile application development, and system architecture. I am passionate about creating impactful software solutions that combine innovation with usability.
+              I am Rehan Dewkalana Godakumbura, an undergraduate Software Engineering student at the University of Westminster with strong expertise in full-stack development, data analysis, mobile application development, and system architecture. I am passionate about creating impactful software solutions that combine innovation with usability.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
@@ -73,18 +73,19 @@ const HeroSection = () => {
                 href="mailto:rehangod2003@gmail.com"
                 className="text-text-muted hover:text-primary transition-colors"
                 aria-label="Email"
+                target="_blank" rel="noopener noreferrer"
               >
                 <Mail className="w-6 h-6" />
               </a>
               <a 
-                href="tel:+94768762852"
+                href="https://api.whatsapp.com/send/?phone=94768762852&text&type=phone_number&app_absent=0"
                 className="text-text-muted hover:text-primary transition-colors"
                 aria-label="Phone"
               >
                 <Phone className="w-6 h-6" />
               </a>
               <a 
-                href="https://linkedin.com/in/rehan-dewkalana-1b9915292"
+                href="https://www.linkedin.com/in/rehan-dewkalana-1b9915292/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text-muted hover:text-primary transition-colors"

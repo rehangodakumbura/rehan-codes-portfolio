@@ -7,7 +7,7 @@ const SkillsSection = () => {
     {
       title: "Programming Languages",
       icon: Code,
-      skills: ["Java", "Python", "Go", "JavaScript", "Kotlin"],
+      skills: ["Java", "Python", "Go", "JavaScript", "Kotlin" , "TypeScript", "Html", "CSS"],
       color: "text-primary",
     },
     {
@@ -25,7 +25,7 @@ const SkillsSection = () => {
     {
       title: "Design",
       icon: Palette,
-      skills: ["Figma"],
+      skills: ["Figma", "Canva"],
       color: "text-pink-400",
     },
     {

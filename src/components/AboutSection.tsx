@@ -13,11 +13,11 @@ const AboutSection = () => {
     },
     {
       institution: "Informatics Institute of Technology (IIT)",
-      degree: "Sri Lanka",
+      degree: "BSc (Hons) Software Engineering",
       status: "In Progress",
-      graduation: "",
+      graduation:"Expected Graduation: 2026",
       icon: School,
-      current: false,
+      current: true,
     },
     {
       institution: "G/Dharmasoka College, Ambalangoda",

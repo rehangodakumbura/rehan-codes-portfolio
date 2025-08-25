@@ -5,6 +5,10 @@ import { ExternalLink, Github, Calendar } from 'lucide-react';
 import ticketSystemImage from '@/assets/project-ticket-system.jpg';
 import movieAppImage from '@/assets/project-movie-app.jpg';
 import learnHeartImage from '@/assets/project-learnheart.jpg';
+import book from '../assets/book.jpg'
+import dice from '../assets/dice.jpg'
+import plane from '../assets/plane.jpg'
+import move from '../assets/move.jpg'
 
 const PortfolioSection = () => {
   const projects = [
@@ -14,7 +18,7 @@ const PortfolioSection = () => {
       description: "Real-time ticketing system with comprehensive event management capabilities, featuring live updates and secure payment processing.",
       image: ticketSystemImage,
       technologies: ["Java OOP", "React", "Spring Boot", "Real-time"],
-      github: "https://github.com/rehangodakumbura",
+      github: "https://github.com/rehangodakumbura/Event-Ticket-Management-System",
       demo: "#",
       featured: true,
     },
@@ -24,49 +28,49 @@ const PortfolioSection = () => {
       description: "Scalable web platform for online education with interactive features, course management, and student progress tracking.",
       image: learnHeartImage,
       technologies: ["React", "Node.js", "MongoDB", "Express.js"],
-      github: "https://github.com/rehangodakumbura",
-      demo: "#",
+      github: "https://github.com/rehangodakumbura/LearnHeart",
+      demo: "https://learnheart.live/",
       featured: true,
     },
     {
       title: "Movie Knowledge App",
       year: "2025",
       description: "Android application integrating with OMDb API for comprehensive movie information, featuring offline storage and search functionality.",
-      image: movieAppImage,
+      image: move,
       technologies: ["Android", "Kotlin", "OMDb API", "Room DB"],
-      github: "https://github.com/rehangodakumbura",
+      github: "https://github.com/rehangodakumbura/MovieApp",
       demo: "#",
-      featured: false,
+      featured: true,
     },
     {
       title: "Plane Seat Management System",
       year: "2024",
       description: "Java-based reservation system for airline seat booking with real-time availability and booking management.",
-      image: null,
+      image: plane,
       technologies: ["Java", "OOP", "Data Structures"],
       github: "https://github.com/rehangodakumbura",
       demo: "#",
-      featured: false,
+      featured: true,
     },
     {
       title: "Dice Game App",
       year: "2025",
       description: "Interactive Android game built with modern UI components and smooth animations using Jetpack Compose.",
-      image: null,
+      image: dice,
       technologies: ["Kotlin", "Jetpack Compose", "Android"],
-      github: "https://github.com/rehangodakumbura",
+      github: "https://github.com/rehangodakumbura/DiceGame",
       demo: "#",
-      featured: false,
+      featured: true,
     },
     {
       title: "Book Management API",
       year: "2025",
       description: "RESTful API for book management with CRUD operations, built using Go and Fiber for high performance.",
-      image: null,
+      image: book,
       technologies: ["Go", "Fiber", "SQLite", "REST API"],
-      github: "https://github.com/rehangodakumbura",
+      github: "https://github.com/rehangodakumbura/Book-Management-API",
       demo: "#",
-      featured: false,
+      featured: true,
     },
   ];
 

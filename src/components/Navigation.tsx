@@ -38,7 +38,7 @@ const Navigation = () => {
       <div className="container-custom section-padding py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-primary">
-            Rehan<span className="text-foreground">.</span>
+            Rehan Dewkalana<span className="text-foreground"></span>
           </div>
 
           {/* Desktop Navigation */}
