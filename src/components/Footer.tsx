@@ -48,7 +48,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="text-3xl font-bold text-primary mb-4">
-              Rehan<span className="text-foreground"> dewkalana</span>
+              Rehan<span className="text-foreground"> Dewkalana</span>
             </div>
             <p className="text-text-muted mb-6 max-w-md leading-relaxed">
               Undergraduate Software Engineer passionate about creating innovative 
@@ -118,7 +118,7 @@ const Footer = () => {
               </div>
               <div>
                 <p className="text-text-muted text-sm">Location</p>
-                <p className="text-foreground">Sri Lanka / UK</p>
+                <p className="text-foreground">Sri Lanka </p>
               </div>
             </div>
           </div>
