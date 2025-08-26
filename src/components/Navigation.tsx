@@ -34,7 +34,7 @@ const Navigation = () => {
   const downloadCV = () => {
     // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = '/Rehan_Godakumbura_CV.pdf'; // Path to your PDF file
+    link.href = '/MyCV/Rehan_Godakumbura.pdf'; // Updated path without spaces
     link.download = 'Rehan_Godakumbura_CV.pdf'; // Downloaded filename
     document.body.appendChild(link);
     link.click();
