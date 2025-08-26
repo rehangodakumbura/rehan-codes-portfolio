@@ -48,7 +48,7 @@ const PortfolioSection = () => {
       description: "Java-based reservation system for airline seat booking with real-time availability and booking management.",
       image: plane,
       technologies: ["Java", "OOP", "Data Structures"],
-      github: "https://github.com/rehangodakumbura",
+      github: "https://github.com/rehangodakumbura/Plane-Seat-Booking-Management-System",
       demo: "#",
       featured: true,
     },

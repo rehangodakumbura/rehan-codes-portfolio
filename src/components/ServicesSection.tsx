@@ -110,7 +110,7 @@ const ServicesSection = () => {
                 </button>
                 <button 
                   className="px-8 py-4 border border-border text-foreground font-semibold rounded-xl hover:bg-card-hover transition-colors"
-                  onClick={() => document.querySelector('#portfolio')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => window.open("https://github.com/rehangodakumbura", "_blank")}
                 >
                   View My Work
                 </button>

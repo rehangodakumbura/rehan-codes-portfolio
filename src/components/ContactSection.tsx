@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Phone, Linkedin, Github, MapPin, Send } from 'lucide-react';
 import { useToast } from "@/hooks/use-toast";
+import emailjs from "@emailjs/browser";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -48,7 +49,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Sri Lanka / UK",
+      value: "Sri Lanka ",
       href: "#",
       color: "text-warning",
     },
@@ -65,15 +66,34 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      await emailjs.send(
+        "service_y7zh56b", // Service ID
+        "template_d4enkg4", // Template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        "8Y98aHIuoYsR_rsRl" // Public Key
+      );
+
       toast({
-        title: "Message Sent!",
+        title: "✅ Message Sent!",
         description: "Thank you for your message. I'll get back to you soon!",
       });
-      setFormData({ name: '', email: '', message: '' });
+
+      setFormData({ name: '', email: '', message: '' }); // reset form
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      toast({
+        title: "❌ Failed to Send",
+        description: "Something went wrong. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
