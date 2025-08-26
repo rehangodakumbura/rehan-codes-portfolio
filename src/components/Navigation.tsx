@@ -31,6 +31,16 @@ const Navigation = () => {
     }
   };
 
+  const downloadCV = () => {
+    // Create a link element and trigger download
+    const link = document.createElement('a');
+    link.href = '/Rehan_Godakumbura_CV.pdf'; // Path to your PDF file
+    link.download = 'Rehan_Godakumbura_CV.pdf'; // Downloaded filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'glass-effect' : 'bg-transparent'
@@ -52,7 +62,12 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <Button variant="outline" size="sm" className="ml-4">
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="ml-4"
+              onClick={downloadCV}
+            >
               <Download className="w-4 h-4 mr-2" />
               Download CV
             </Button>
@@ -79,7 +94,12 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <Button variant="outline" size="sm" className="mt-4">
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="mt-4"
+              onClick={downloadCV}
+            >
               <Download className="w-4 h-4 mr-2" />
               Download CV
             </Button>
