@@ -32,10 +32,14 @@ const Navigation = () => {
   };
 
   const downloadCV = () => {
+    // Google Drive direct download link
+    const googleDriveLink = 'https://drive.google.com/uc?export=download&id=14WIKurgCDQT-UHPfrtIdyB4k6CxPmUHV';
+    
     // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = '/MyCV/Rehan_Godakumbura.pdf'; // Updated path without spaces
-    link.download = 'Rehan_Godakumbura_CV.pdf'; // Downloaded filename
+    link.href = googleDriveLink;
+    link.download = 'Rehan_Godakumbura_CV.pdf';
+    link.target = '_blank'; // Fallback to open in new tab
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
